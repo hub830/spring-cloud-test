@@ -1,0 +1,12 @@
+${AnsiColor.BRIGHT_CYAN}
+ _______  __   __  ______    _______  ___   _  _______ 
+|       ||  | |  ||    _ |  |       ||   | | ||   _   |
+|    ___||  | |  ||   | ||  |    ___||   |_| ||  |_|  |
+|   |___ |  |_|  ||   |_||_ |   |___ |      _||       |
+|    ___||       ||    __  ||    ___||     |_ |       |
+|   |___ |       ||   |  | ||   |___ |    _  ||   _   |
+|_______||_______||___|  |_||_______||___| |_||__| |__|
+
+${AnsiColor.BRIGHT_RED}
+Application Version: ${application.version}${application.formatted-version}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
