@@ -5,3 +5,15 @@ pluginManagement {
 }
 rootProject.name = 'spring-cloud-test'
 include 'spring-cloud-test-discovery'
+
+include ':spring-clooud-test-provider-order-api'
+project (':spring-clooud-test-provider-order-api').projectDir = new File(rootDir, 'spring-clooud-test-provider-api/spring-clooud-test-provider-order-api')
+
+include ':spring-clooud-test-provider-product-api'
+project (':spring-clooud-test-provider-product-api').projectDir = new File(rootDir, 'spring-clooud-test-provider-api/spring-clooud-test-provider-product-api')
+
+include ':spring-clooud-test-provider-order'
+project (':spring-clooud-test-provider-order').projectDir = new File(rootDir, 'spring-clooud-test-provider/spring-clooud-test-provider-order')
+
+include ':spring-clooud-test-provider-product'
+project (':spring-clooud-test-provider-product').projectDir = new File(rootDir, 'spring-clooud-test-provider/spring-clooud-test-provider-product')
