@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="spring-cloud-test" module="spring-clooud-test-provider-product-api" revision="unspecified" status="integration" publication="20190528111057"/>
+  <info organisation="spring-cloud-test" module="spring-cloud-test-provider-product-api" revision="unspecified" status="integration" publication="20190528163450"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="apiElements" visibility="private" extends="runtime"/>
@@ -25,8 +25,8 @@
     <conf name="testRuntimeOnly" visibility="private" extends="runtimeOnly"/>
   </configurations>
   <publications>
-    <artifact name="spring-clooud-test-provider-product-api" type="jar" ext="jar" conf="apiElements,archives,bootArchives,runtime,runtimeElements"/>
-    <artifact name="spring-clooud-test-provider-product-api" type="jar" ext="jar" conf="archives" m:classifier="sources"/>
+    <artifact name="spring-cloud-test-provider-product-api" type="jar" ext="jar" conf="apiElements,archives,bootArchives,runtime,runtimeElements"/>
+    <artifact name="spring-cloud-test-provider-product-api" type="jar" ext="jar" conf="archives" m:classifier="sources"/>
   </publications>
   <dependencies>
     <dependency org="org.projectlombok" name="lombok" rev="" conf="annotationProcessor-&gt;default"/>
@@ -44,7 +44,11 @@
       <exclude org="commons-logging" module="commons-logging"/>
     </dependency>
     <dependency org="org.springframework.boot" name="spring-boot-starter-test" rev="" conf="testCompile-&gt;default"/>
+    <dependency org="org.junit.jupiter" name="junit-jupiter-params" rev="5.2.0" conf="testCompile-&gt;default"/>
+    <dependency org="org.mockito" name="mockito-junit-jupiter" rev="2.18.3" conf="testCompile-&gt;default"/>
+    <dependency org="org.junit.jupiter" name="junit-jupiter-api" rev="5.2.0" conf="testImplementation-&gt;default"/>
     <dependency org="org.springframework.boot" name="spring-boot-starter-test" rev="" conf="testImplementation-&gt;default"/>
     <dependency org="org.springframework.security" name="spring-security-test" rev="" conf="testImplementation-&gt;default"/>
+    <dependency org="org.junit.jupiter" name="junit-jupiter-engine" rev="5.2.0" conf="testRuntime-&gt;default"/>
   </dependencies>
 </ivy-module>

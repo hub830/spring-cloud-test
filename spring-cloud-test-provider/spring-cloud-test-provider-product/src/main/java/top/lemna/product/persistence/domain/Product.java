@@ -24,19 +24,19 @@ public class Product extends AutoIdEntity {
 
   /** 产品编号 */
   @Column(length = 32, nullable = false, unique = true)
-  private String productNO;
+  private String productNo;
 
   /** 产品名称 */
   @Column(length = 64, nullable = false)
   private String name;
 
-  /** 可用余额 单位为分 */
+  /** 库存 */
   @Column(length = 16, nullable = false)
   private Long stock;
 
-  public Product(String productNO, String name, Long stock) {
+  public Product(String productNo, String name, Long stock) {
     super();
-    this.productNO = productNO;
+    this.productNo = productNo;
     this.name = name;
     this.stock = stock;
   }

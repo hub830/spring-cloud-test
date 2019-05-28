@@ -3,7 +3,7 @@ package top.lemna.product.exceptions;
 import java.math.BigInteger;
 import java.text.MessageFormat;
 
-public class RecordNotExistException extends RuntimeException {
+public class RecordNotExistException extends ProductBizException {
   private static final long serialVersionUID = 1L;
   
   private String recordId;
