@@ -5,7 +5,6 @@ pluginManagement {
 }
 rootProject.name = 'spring-cloud-test'
 include 'spring-cloud-test-eureka'
-include 'spring-cloud-test-user'
 
 include ':spring-cloud-test-provider-order-api'
 project (':spring-cloud-test-provider-order-api').projectDir = new File(rootDir, 'spring-cloud-test-provider-api/spring-cloud-test-provider-order-api')

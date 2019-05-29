@@ -12,3 +12,10 @@ spring:
   jpa:
     generate-ddl: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+security:
+  oauth2:
+    resource:
+      id: order-service
+      user-info-uri: http://localhost:8210/user
+      prefer-token-info: false

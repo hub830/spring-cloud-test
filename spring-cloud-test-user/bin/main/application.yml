@@ -1,0 +1,27 @@
+server:
+  port: 8210
+  
+spring:
+  application:
+      name: auth-server
+
+#  jpa:
+#    open-in-view: true
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    platform: postgres
+#    url: jdbc:postgresql://192.168.1.140:5432/auth
+#    username: wang
+#    password: yunfei
+#    driver-class-name: org.postgresql.Driver
+  redis:
+    host: 10.0.0.10
+
+##很重要
+security:
+  oauth2:
+    resource:
+      filter-order: 3
